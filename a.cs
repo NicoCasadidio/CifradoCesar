@@ -9,7 +9,8 @@ class Program
 
         Console.WriteLine("Mensaje original: " + mensajeOriginal);
 
-        int distancia = 7;
+        Console.WriteLine("Ingrese la distancia para el cifrado: ");
+        int distancia = Convert.ToInt32(Console.ReadLine());
 
         string mensajeCifrado = Cifrar(mensajeOriginal, distancia);
         Console.WriteLine("Mensaje cifrado: " + mensajeCifrado);
